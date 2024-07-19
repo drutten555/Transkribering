@@ -15,7 +15,7 @@ def audioToText(audioPath, outputPath, initialPrompt):
 
     # transcribe audio
     result = model.transcribe(audioPath, fp16=False,
-                              language="sv",
+                              #language="sv", # unspecified will be detected automatically
                               task="transcribe",
                               temperature=0.4,
                               best_of=2, # number of candidates to consider
