@@ -1,4 +1,3 @@
-
 import os
 import whisper
 from dotenv import load_dotenv
@@ -7,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def audioToText(audioPath, outputPath, initialPrompt):
-    model = whisper.load_model(os.getenv('CONFIG')) # choose tiny, base, small, medium, large
+    model = whisper.load_model(os.getenv('CONFIG')) # choose tiny, base, small, medium, large-v2
 
     # transcribe audio
     result = model.transcribe(audioPath, fp16=False,
