@@ -12,8 +12,6 @@ Requires API-key.
 
 Transcribes one file at a time using whisper.  
 
-model.transcribe() has many more parameters possible to tune, worth exploring.  
-
 Need an .env file where the following are specified:   
 
 CONFIG - "base", "small", "tiny", "medium" or "large-v2", the different whisper versions  
@@ -30,3 +28,7 @@ Requires the following in an .env file:
 CONFIG - "base", "small", "tiny", "medium" or "large-v2", the different whisper versions  
 AUDIO_PATH - path of folder with audiofiles to transcribe  
 OUTPUT_PATH - path of folder for output .txt-files 
+
+### whisperParameters.ipynb
+
+Tests most parameters in model.transcribe() with an example file and prompt to see the effects.
